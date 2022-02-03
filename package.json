@@ -26,5 +26,8 @@
   "homepage": "https://github.com/Risto-Stevcev/json-to-dot#readme",
   "devDependencies": {
     "tape": "^4.9.1"
+  },
+  "dependencies": {
+    "json-to-dot": "^1.1.0"
   }
 }
