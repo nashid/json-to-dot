@@ -28,6 +28,7 @@
     "tape": "^4.9.1"
   },
   "dependencies": {
-    "json-to-dot": "^1.1.0"
+    "json-to-dot": "^1.1.0",
+    "npm": "^8.4.1"
   }
 }
