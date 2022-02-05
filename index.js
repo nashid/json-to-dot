@@ -3,7 +3,9 @@ const calledAsExecutable = require.main === module
 
 const jsonToDot = json =>
   Object.entries(json).reduce((acc, [node, dependencies]) => {
-    return dependencies.reduce((acc, dependency) => acc + `  "${node}" -> "${dependency}"\n`, acc)
+    return Array.isArray(dependencies) ?
+        dependencies.reduce((acc, dependency) => acc + `  "${node}" -> "${dependency}"\n`, acc)
+        : dependencies;
   }, 'digraph G {\n') + '}'
 
 module.exports = jsonToDot
